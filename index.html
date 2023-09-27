@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ftj8drh.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="css/nametag2.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
   </head>
+
   <body>
     <nav id="desktop-nav">
       <div class="logo">Nga Vu</div>
@@ -56,6 +61,19 @@
         </div>
       </div>
     </nav>
+    <div class="cursor">
+			<div class="cursor__inner">
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="gooey">
+					    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.2" />
+					    <feColorMatrix in="blur" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 20 -7" result="goo" />
+					    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+					</filter>
+				</defs>
+			</svg>
+		</div>
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.jpg" alt="Nga Vu profile picture" />
@@ -66,7 +84,7 @@
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            class="btn btn-primary"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
@@ -323,13 +341,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Team5SWE/Petit'"
+                id="github-project1"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://gilded-jalebi-846bdf.netlify.app/'"
+                id="live-demo1"
               >
                 Live Demo
               </button>
@@ -343,19 +361,13 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Mobile App Project</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jennievu'"
+                id="github-project2"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jennievu'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
@@ -367,19 +379,13 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Mobile App Project</h2>
+            <h2 class="experience-sub-title project-title">Project 3</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jennievu/MobileApp'"
+                id="github-project3"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jennievu/MobileApp'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
@@ -421,6 +427,7 @@
         </div>
       </div>
     </section>
+    
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -434,6 +441,9 @@
       </nav>
       <p>Copyright &#169; 2023 Nga Vu. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/gsap.min.js"></script>
+		<script type="module" src="js/nametag.js"></script>
   </body>
 </html>
