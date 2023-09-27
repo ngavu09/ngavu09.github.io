@@ -18,6 +18,7 @@
     #experience,
     .experience-details-container {
       margin-top: 2rem;
+      margin-bottom: 4rem;
     }
     #profile,
     .section-container {
@@ -44,9 +45,11 @@
   }
   
   @media screen and (max-width: 600px) {
-    #contact,
-    footer {
+    #contact, footer{
       height: 40vh;
+    }
+    #contact {
+      margin-bottom: 8rem;
     }
     #profile {
       height: 83vh;
