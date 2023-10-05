@@ -47,7 +47,7 @@
     }
     .about-containers {
       margin-top: 1rem;
-      width: auto;s
+      width: auto;
     }
     .about-details-container{
       width: auto;
@@ -79,7 +79,19 @@
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
+      margin-bottom: 9px;
+
     }
+    .article-container{
+      display: flex;
+      text-align: initial;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: space-around;
+      margin: 0.7rem 0 0 0;
+    }
+    
     .contact-info-container {
       margin: 0;
     }
@@ -119,5 +131,10 @@
       padding: 1rem;
       margin: auto;
     }
+    .details-container{
+      margin: 0;
+    }
+
+
   }
   
