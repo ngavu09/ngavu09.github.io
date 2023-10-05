@@ -5,6 +5,7 @@
     }
     .about-containers {
       flex-wrap: wrap;
+      margin-bottom: 3rem;
     }
   }
   
@@ -18,7 +19,8 @@
     #experience,
     .experience-details-container {
       margin-top: 2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+      width: auto;
     }
     #profile,
     .section-container {
@@ -30,18 +32,29 @@
     section,
     .section-container {
       height: fit-content;
+      width: auto;
+      padding: 1rem;
+      margin: 1rem auto 3rem auto;
     }
     section {
-      margin: 0 5%;
+      margin: 0;
+      
     }
     .section__pic-container {
       width: 275px;
       height: 275px;
-      margin: 0 auto 2rem;
+      margin: 0 auto;
     }
     .about-containers {
-      margin-top: 0;
+      margin-top: 1rem;
+      width: auto;s
     }
+    .about-details-container{
+      width: auto;
+      justify-content: center;
+      text-align: justify;
+    }
+  
   }
   
   @media screen and (max-width: 600px) {
@@ -98,6 +111,13 @@
     }
     .text-container {
       text-align: justify;
+    }
+    .about-details-container{
+      width: auto;
+      justify-content: center;
+      text-align: justify;
+      padding: 1rem;
+      margin: auto;
     }
   }
   
