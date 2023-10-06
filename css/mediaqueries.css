@@ -43,7 +43,7 @@
     .section__pic-container {
       width: 275px;
       height: 275px;
-      margin: 0 auto;
+      margin: 2rem auto;
     }
     .about-containers {
       margin-top: 1rem;
@@ -123,6 +123,7 @@
     }
     .text-container {
       text-align: justify;
+      margin: 20px 0;
     }
     .about-details-container{
       width: auto;
