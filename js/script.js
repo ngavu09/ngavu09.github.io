@@ -44,6 +44,9 @@ function toggleMenu() {
     themeIcons.forEach((icon) => {
       icon.src = icon.getAttribute("src-dark");
     });
+
+    var menuBackground = document.getElementById('menu-background');
+    menuBackground.style.backgroundColor = 'rgba(255, 255, 255, 0.25)';
   }
   
   function setLightMode() {
@@ -56,5 +59,8 @@ function toggleMenu() {
     themeIcons.forEach((icon) => {
       icon.src = icon.getAttribute("src-light");
     });
+
+    var menuBackground = document.getElementById('menu-background');
+    menuBackground.style.backgroundColor = 'rgba(255, 255, 255, 0.878)';
   }
   
