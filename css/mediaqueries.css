@@ -59,7 +59,7 @@
   
   @media screen and (max-width: 600px) {
     #footer{
-      height: 40vh;
+      height: 30vh;
     }
     #contact {
       margin-bottom: 1rem;
@@ -70,11 +70,18 @@
     }
     article {
       font-size: 1rem;
+      width: 13rem;
+      justify-content: left;
     }
     footer nav {
       height: fit-content;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
+    footer {
+      text-align: center;
+      margin-bottom: 7rem;
+    }
+    
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
@@ -85,11 +92,10 @@
     .article-container{
       display: flex;
       text-align: initial;
-      flex-wrap: wrap;
       flex-direction: row;
       gap: 2rem;
       justify-content: space-around;
-      margin: 0.7rem 0 0 0;
+      margin: 0 0 1rem 0;
     }
     
     .contact-info-container {
@@ -135,7 +141,14 @@
     .details-container{
       margin: 0;
     }
-
+    .qr-code  {
+      display: flex;
+      padding: 1rem;
+      margin: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+    
 
   }
   
